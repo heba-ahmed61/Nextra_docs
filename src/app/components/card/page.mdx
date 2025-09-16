@@ -1,0 +1,46 @@
+# Card
+
+The **Card** component is a container for grouping related content, such as text, images, or actions.  
+It helps structure your UI in a clean and reusable way.
+
+---
+
+## Example
+
+```jsx copy
+import { Card } from 'faketool/components';
+
+export default function Example() {
+  return (
+    <Card title="Getting Started">
+      <p>This is an example of a FakeTool Card component.</p>
+      <button>Click Me</button>
+    </Card>
+  );
+}
+```
+
+## Props
+
+- **Title** (string) → The text displayed at the top of the card.
+- **Children** (ReactNode) → Content inside the card (text, images, buttons, etc.).
+
+## Example with multiple cards
+
+```jsx copy
+import { Card } from 'faketool/components';
+
+export default function Dashboard() {
+  return (
+    <div style={{ display: 'flex', gap: '1rem' }}>
+      <Card title="Project 1">
+        <p>Details about project 1.</p>
+      </Card>
+
+      <Card title="Project 2">
+        <p>Details about project 2.</p>
+      </Card>
+    </div>
+  );
+}
+```

@@ -1,0 +1,54 @@
+# Navbar
+
+The **Navbar** component provides a top navigation bar for your application.  
+It usually contains your brand name or logo and a list of navigation links.
+
+---
+
+## Example
+
+```jsx copy
+import { Navbar } from 'faketool/components';
+
+export default function Example() {
+  return (
+    <Navbar
+      brand="FakeTool"
+      links={[
+        { label: 'Home', href: '/' },
+        { label: 'About', href: '/about' },
+        { label: 'Docs', href: '/docs' },
+      ]}
+    />
+  );
+}
+```
+
+## Props
+
+- "Brand" (string) → Brand name or logo text shown at the start of the navbar.
+
+- "Links" (array of objects) → Navigation links, each with:
+
+  - "Label" (string) → The link text.
+
+  - "Href" (string) → The destination URL.
+
+## Example with custom brand and links
+
+```jsx copy
+import { Navbar } from 'faketool/components';
+
+export default function CustomNavbar() {
+  return (
+    <Navbar
+      brand="MyApp"
+      links={[
+        { label: 'Dashboard', href: '/dashboard' },
+        { label: 'Settings', href: '/settings' },
+        { label: 'Logout', href: '/logout' },
+      ]}
+    />
+  );
+}
+```

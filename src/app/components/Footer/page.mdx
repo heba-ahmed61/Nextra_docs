@@ -1,0 +1,35 @@
+# Footer
+
+The **Footer** component is displayed at the bottom of the page.  
+It’s commonly used to show copyright info, links, or contact details.
+
+---
+
+## Example
+
+```jsx copy
+import { Footer } from 'faketool/components';
+
+export default function Example() {
+  return (
+    <Footer
+      text="© 2025 FakeTool. All rights reserved."
+      links={[
+        { label: 'Docs', href: '/docs' },
+        { label: 'GitHub', href: 'https://github.com/faketool' },
+        { label: 'Contact', href: '/contact' },
+      ]}
+    />
+  );
+}
+```
+
+## Props
+
+- "Text" (string) → Main footer text, usually for copyright.
+
+- "Links" (array of objects) → Optional navigation or social links:
+
+  - Label (string) → Link text.
+
+  - Href (string) → Destination URL.

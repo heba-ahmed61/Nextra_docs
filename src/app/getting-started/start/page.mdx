@@ -1,0 +1,53 @@
+# Usage
+
+After creating a FakeTool project, let’s see how to use it in a real project.
+
+---
+
+## 1. Start development
+
+Move into your project folder and start the dev server:
+
+```bash copy
+cd my-project
+npm run dev
+```
+
+By default, the project will run at [http://localhost:3000/](http://localhost:3000/)
+
+## 2. Project structure
+
+When you create a project with FakeTool, you’ll get a folder like this:
+
+```json
+my-app/
+ ├── package.json
+ ├── faketool.config.js
+ └── src/
+     └── index.js
+
+```
+
+## 3. Build for production
+
+When you’re ready to deploy:
+
+```bash copy
+npm run build
+```
+
+This creates an optimized output in the dist/ folder.
+
+## 4. Run in production
+
+Serve the production build:
+
+```bash copy
+npm run start
+```
+
+## 5. Next steps
+
+- Learn how to [configure FakeTool](/confg)
+
+- [Built-In components](/components/button)
