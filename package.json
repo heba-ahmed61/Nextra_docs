@@ -6,9 +6,17 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "postbuild": "pagefind --site .next/server/app --output-path public/_pagefind"
   },
   "dependencies": {
+    "@emotion/cache": "^11.14.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^7.3.2",
+    "@mui/material": "^7.3.2",
+    "@mui/material-nextjs": "^7.3.2",
+    "framer-motion": "^12.23.13",
     "next": "15.5.3",
     "nextra": "^4.4.0",
     "nextra-theme-docs": "^4.4.0",
@@ -22,6 +30,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.5.3",
+    "pagefind": "^1.4.0",
     "typescript": "^5"
   }
 }

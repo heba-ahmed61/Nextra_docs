@@ -1,0 +1,36 @@
+# Performance
+
+CyWeb is designed with speed in mind. Whether you’re working in development or deploying to production, it ensures fast builds and smooth user experience.
+
+---
+
+## Development performance
+
+- **Hot Reloading**  
+  Any change you make is reflected instantly without restarting the server.
+
+- **Minimal overhead**  
+  CyWeb avoids unnecessary bundling during dev for faster feedback loops.
+
+---
+
+## Production performance
+
+- **Code splitting**  
+  Only the code that’s needed is loaded, reducing initial bundle size.
+
+- **Automatic minification**  
+  Your output is optimized by default with tree-shaking and dead code removal.
+
+- **Caching**  
+  Rebuilds are cached to speed up redeployment.
+
+---
+
+## Best practices
+
+- Use the `--analyze` flag (`npm run build -- --analyze`) to inspect your bundle size.
+- Keep an eye on third-party dependencies, as they often increase build size.
+- Use [configuration](/config) options to control optimizations.
+
+---

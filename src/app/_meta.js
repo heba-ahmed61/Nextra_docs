@@ -1,6 +1,8 @@
 export default {
+  index: 'home',
   resources: 'Introduction',
   'getting-started': 'Getting Started',
-  confg: 'Configuration',
+  config: 'Configuration',
   components: 'Built-In Components',
+  advanced: 'Advanced',
 };

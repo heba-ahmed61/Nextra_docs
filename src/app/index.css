@@ -1,0 +1,183 @@
+/* home page style*/
+
+.home_wrapper{
+    padding: 20px 0;
+}
+.home_header{
+    position: relative;
+}
+.home_header_layout{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.home_header_content{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  
+}
+.home_header_content *{
+    flex: 1;
+}
+.home_header_content .home_header_content_desc {
+z-index: 4;
+  position: relative;
+  font-size: 30px;
+  padding: 0 20px;
+  
+  display: flex;
+  flex-direction: column;
+}
+.home_header_content img{
+margin: auto;
+}
+.home_header_content .home_header_content_desc  a{
+    background-color: #54c7ec;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    width: fit-content;
+    margin: 20px 0;
+    font-size: 25px;
+    display: block;
+    border: 2px solid transparent;
+}
+.home_header_content .home_header_content_desc a:hover{
+    color: #54c7ec;
+    background-color: white;
+    border: 2px solid #54c7ec;
+    transition: all .4s ease-in-out;
+}
+.about_cyweb {
+    background-color: black;
+    padding: 70px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about_cyweb >div p{
+    line-height: 35px;
+    font-size: 20px;
+    margin: 10px 0;
+}
+.about_cyweb > div p a{
+    color: #54c7ec;
+}
+
+.about_cyweb h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.provided_by{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.provided_by img{
+    width: 90%;
+}
+.loved_by{
+    padding: 20px 0;
+    font-size: 30px;
+    text-align: center;
+}
+.testimonials_section {
+  padding: 3rem 1.25rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.testimonials_lead {
+  margin: 0 0 1.5rem;
+  font-size: 25px;
+  color: #e6eef8; 
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+  align-items: stretch;
+}
+
+.testimonial-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255,255,255,0.04);
+  padding: 1.25rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #ffffff;
+  min-height: 160px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+.testimonial-body { margin-bottom: 0.75rem; }
+
+.quote {
+  font-style: italic;
+  margin: 0;
+  line-height: 35px;
+  color: #dfeeff;
+  font-size: 20px;
+}
+
+.testimonial-meta {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.testimonial-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 9999px;
+  object-fit: cover;
+  border: 2px solid rgba(255,255,255,0.06);
+}
+
+.testimonial-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.testimonial-role {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.7);
+}
+
+@media screen and (max-width:757.9px){
+    .home_header_content{
+        flex-direction: column;
+    }
+    .home_header_content .home_header_content_desc { 
+  width: 100%;
+  margin-bottom: 10px;
+}
+.about_cyweb{
+flex-direction: column;
+}
+}
+
+@media screen and (min-width:756px) and (max-width:1199px){
+ 
+.home_header_content .home_header_content_desc{ 
+  width: 60%;
+  
+}
+.about_cyweb{
+flex-direction: column;
+}
+}

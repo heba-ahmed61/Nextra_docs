@@ -1,0 +1,22 @@
+# Using TypeScript
+
+CyWeb works seamlessly with TypeScript to improve developer experience and catch errors before runtime.
+
+---
+
+## Getting started
+
+When creating a new project, simply add a `tsconfig.json`:
+
+```json filename="tsconfig.json"
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "strict": true,
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "skipLibCheck": true
+  }
+}
+```

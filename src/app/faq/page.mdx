@@ -1,0 +1,57 @@
+import * as React from 'react';
+import Accordion from '@mui/material/Accordion';
+import AccordionActions from '@mui/material/AccordionActions';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Button from '@mui/material/Button';
+
+# FAQ
+
+---
+
+      <Accordion defaultExpanded sx={{ backgroundColor: '#1e1e1e', color: '#fff' }}>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1-content"
+          id="panel1-header"
+        >
+          <Typography component="span">What is CyWeb?</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+         CyWeb is a lightweight framework for building modern web projects quickly
+      with built-in configuration, components, and performance optimizations.
+
+        </AccordionDetails>
+      </Accordion>
+      <Accordion sx={{ backgroundColor: '#1e1e1e', color: '#fff' }}>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel2-content"
+          id="panel2-header"
+        >
+          <Typography component="span">Does CyWeb support TypeScript?</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          Yes  CyWeb works seamlessly with TypeScript.
+      See the [TypeScript guide](/advanced/typescript) for setup instructions.
+        </AccordionDetails>
+      </Accordion>
+      <Accordion sx={{ backgroundColor: '#1e1e1e', color: '#fff' }}>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel3-content"
+          id="panel3-header"
+        >
+          <Typography component="span">How do I deploy a CyWeb project?</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          After running <code>npm run build</code>, your project will be in the <code>dist/</code> folder.
+      You can deploy this to **Netlify, Vercel, or any static hosting provider**.
+
+        </AccordionDetails>
+        <AccordionActions>
+
+        </AccordionActions>
+      </Accordion>
